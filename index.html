@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Multiple Pages</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../javascript/jqueryMobile-1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="../javascript/jquery-2.1.0.js"></script>
+    <script src="../javascript/jqueryMobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head> 
+<body> 
+
+<!--home-->
+
+<div data-role="page" id="page1">
+	<header data-role="header">
+		<h1>My Trips</h1>
+		<a href="#page2" data-role="button" data-transition="pop" data-icon="plus" class="ui-btn-right">Add a trip</a> 
+	</header>
+	
+	<div data-role="main" class="ui-content">
+		<h3>Upcoming Trip</h3>
+		<a href="#page4" class="ui-btn ui-btn-b"> Paris, France - April 10</a>
+
+
+		<h3>Future Trips</h3>
+		<ul data-role="listview">
+			<li><a href="#" data-transition="slide">Mexico - 2015</a></li>
+			<li><a href="#" data-transition="slide">Las Vegas - 2015</a></li>
+			<li><a href="#" data-transition="slide">Canada - 2015</a></li>
+		</ul>
+	</div>
+	<!--
+	<footer data-role="footer">
+		<h4>Footer</h4>
+	</footer>
+	-->	
+</div>
+
+<!--New Trip-->
+
+<div data-role="dialog" id="page2">
+	<div data-role="header">
+		<h1>New Trip</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+	<form action="doFoo" method="post">
+		<div data-role="fieldcontain">
+			<label for="text-basic">Where are you going?</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label for="text-basic">When do you leave?</label>
+			<input type="text" name="text-basic" id="text-basic" value="">			
+			<label for="text-basic">When do you return?</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+		</div>
+		<a href="#page3" class="ui-btn ui-btn-b">Add This Trip</a>
+	</form>
+	</div>
+</div>
+
+<!--Success-->
+
+<div data-role="dialog" id="page3" data-close-btn="none">
+	<header data-role="header" >
+		<h1>Success!</h1>
+	</header>
+	<div data-role="main" class="ui-content">
+		<p>Your trip has been added.</p>
+		<p><a href="#page1" data-transition="fade" data-direction="reverse">Close</a></p>
+	</div>
+</div>
+
+<!--Trip Info-->
+
+<div data-role="page" id="page4">
+	<header data-role="header">
+		<h1>Paris, France</h1>
+		<a href="#page1" data-transition="slide" data-direction="reverse">Back</a>
+	</header>
+	<div data-role="main" class="ui-content">
+		<h3>Thursday April 10 - Monday April 14</h3>
+			<div class="ui-grid-a">
+			    <div class="ui-block-a"><button class="ui-btn">Add Plans</button></div>
+			    <div class="ui-block-b"><button class="ui-btn">Share Trip</button></div>
+			</div>
+	</div>
+</div>
+</body>
+</html>
+
+
