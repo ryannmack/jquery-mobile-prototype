@@ -45,12 +45,18 @@
 	<div data-role="main" class="ui-content">
 	<form action="doFoo" method="post">
 		<div data-role="fieldcontain">
-			<label for="text-basic">Where are you going?</label>
-			<input type="text" name="text-basic" id="text-basic" value="">
-			<label for="text-basic">When do you leave?</label>
-			<input type="text" name="text-basic" id="text-basic" value="">			
-			<label for="text-basic">When do you return?</label>
-			<input type="text" name="text-basic" id="text-basic" value="">
+			<div>
+				<label for="going">Where are you going?</label>
+			</div>
+			<input type="text" name="going" id="going" value="">
+			<div>
+				<label for="leave">When do you leave?</label>
+			</div>
+			<input type="text" name="leave" id="leave" value="">			
+			<div>
+				<label for="return">When do you return?</label>
+			</div>
+			<input type="text" name="return" id="return" value="">
 		</div>
 		<a href="#page3" class="ui-btn ui-btn-b">Add This Trip</a>
 	</form>
